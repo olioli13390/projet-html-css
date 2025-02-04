@@ -305,6 +305,10 @@ footer p {
         background: rgb(53, 168, 151);
     }
 
+    nav #accueil {
+        display: none;
+    }
+
     nav h2 {
         display: none;
     }
@@ -441,4 +445,7 @@ footer p {
         opacity: 0;
     }
 
+    #arrow {
+        top: 87%;
+    }
 }

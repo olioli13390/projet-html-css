@@ -280,6 +280,10 @@ footer p {
         width: 100%;
     }
 
+    nav #accueil {
+        display: none;
+    }
+
     nav h2 {
         display: none;
     }
@@ -335,7 +339,6 @@ footer p {
 
     iframe {
         height: 200px;
-        ;
         width: 300px;
     }
 
@@ -401,5 +404,9 @@ footer p {
 
     input {
         opacity: 0;
+    }
+
+    #arrow {
+        top: 87%;
     }
 }
