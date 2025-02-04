@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(17, 29, 86);
+    color: white;
+    position: relative;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
+}
+
+a:hover {
+    border: 1px solid white;
+    transition: 0.5s ease;
+}
+
+
+#contact-form {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(53, 168, 151);
+}
+
+#contact-form h2 {
+    margin-top: 0;
+}
+
+#contact-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+textarea {
+    height: 60px;
+    border: none;
+    background: white;
+    color: black;
+    outline: none;
+}
+
+input {
+    background: white;
+    height: 30px;
+    color: black;
+    outline: none;
+    transition: 0.4s ease;
+}
+
+input:focus {
+    border: 1px solid #007BFF;
+}
+
+textarea:focus {
+    border: 1px solid #007BFF;
+}
+
+#contact-form button {
+    background: rgb(53, 168, 151);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact {
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+}
+
+.contact ul {
+    padding: 0;
+}
+
+.contact li {
+    list-style: none;
+    padding: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#message {
+    margin-top: 10%;
+    padding: 5px;
+    background-color: rgb(82, 161, 82);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+
+}
+
+#cacher {
+    opacity: 0;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../asset/style/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav id="top">
+            <div class="burger"><label for="toggle"><img src="../asset/image/burger_menu.svg" alt=""></label>
+                <input type="checkbox" id="toggle">
+                <div id="content">
+                    <ul id="deroulant">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="./html.html">HTML</a></li>
+                        <li><a href="./javascript.html">JS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a id="accueil" href="../index.html">Infodev</a>
+
+            <ul class="full_page">
+                <li><a href="./html.html">HTML</a></li>
+                <li><a href="./javascript.html">JS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="title">
+            <img src="../asset/image/CSS3_logo.svg.png" alt="css">
+        </div>
+
+
+        <article>
+            <h2>Définition et Fonction</h2>
+            <div class="part-container">
+
+                <p>Le CSS (Cascading Style Sheets) est un langage utilisé pour décrire la présentation des documents
+                    HTML et
+                    XML. Il permet de contrôler la mise en page, les couleurs, les polices, l'espacement et d'autres
+                    aspects
+                    visuels des éléments d'une page web. Le CSS est essentiel pour séparer le contenu (HTML) de la
+                    présentation, facilitant ainsi la maintenance et l'évolution des sites web.
+                    Le CSS utilise une syntaxe simple composée de sélecteurs et de déclarations. Un sélecteur cible les
+                    éléments HTML auxquels les styles doivent être appliqués, et les déclarations définissent les styles
+                    eux-mêmes.
+                </p>
+                <ul>
+                    <li>Sélecteurs : Ils peuvent être des éléments (p, div), des classes (.classe), des IDs (#id), ou
+                        des
+                        attributs ([type="text"]).</li>
+                    <li>Propriétés : Elles définissent les aspects visuels (color, font-size, margin, etc.).</li>
+                    <li>Valeurs : Elles spécifient les valeurs des propriétés (red, 16px, 10px, etc.).</li>
+                </ul>
+                <div class="img"><img src="../asset/image/css_1.webp" alt="css"></div>
+
+                <h3>Types de Sélecteurs</h3>
+                <ul>
+                    <li>Sélecteurs de Type : Ciblent tous les éléments d'un type donné (p, div).</li>
+                    <li>Sélecteurs de Classe : Ciblent les éléments avec une classe spécifique (.classe).</li>
+                    <li>Sélecteurs d'ID : Ciblent un élément unique avec un ID spécifique (#id).</li>
+                    <li>Sélecteurs d'Attribut : Ciblent les éléments avec un attribut spécifique ([type="text"]).</li>
+                    <li>Sélecteurs Pseudo-Classes : Ciblent les éléments dans des états spécifiques (:hover, :focus).
+                    </li>
+                    <li>Sélecteurs Pseudo-Éléments : Ciblent des parties spécifiques d'un élément (::before, ::after).
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+        <hr>
+        <article>
+            <h2>Propriétés et techniques avancées</h2>
+            <div class="part-container">
+                <div class="img"><img src="../asset/image/css_2.webp" alt="css"></div>
+
+                <h3>propriétés courantes</h3>
+                <ul>
+                    <li>Couleurs et Fonds : color, background-color, background-image.</li>
+                    <li>Polices : font-family, font-size, font-weight.</li>
+                    <li>Espacement : margin, padding, border.</li>
+                    <li>Disposition : display, position, float, flexbox, grid.</li>
+                    <li>Effets Visuels : opacity, box-shadow, transform.</li>
+                    <li>Transitions et Animations : transition, animation.</li>
+                </ul>
+
+            </div>
+
+        </article>
+        <hr>
+        <article>
+            <h2>Outils et Bonnes Pratiques</h2>
+            <div class="part-container">
+
+                <h3>Préprocesseurs CSS</h3>
+                <p>Les préprocesseurs CSS, tels que SASS et LESS, sont des outils puissants qui étendent les
+                    fonctionnalités
+                    du CSS standard. Ils permettent d'utiliser des variables, des mixins (blocs de code réutilisables),
+                    et
+                    des imbrications pour rendre le code CSS plus modulaire et maintenable. Par exemple, avec SASS, vous
+                    pouvez définir une variable pour une couleur principale et l'utiliser partout dans votre feuille de
+                    style, ce qui facilite les mises à jour globales.</p>
+                <h3>Frameworks CSS</h3>
+                <p>Les frameworks CSS comme Bootstrap et Foundation offrent des bibliothèques de styles prédéfinis qui
+                    simplifient le développement de sites web réactifs. Ces frameworks fournissent des composants
+                    d'interface utilisateur prêts à l'emploi, tels que des grilles de mise en page, des boutons, des
+                    formulaires, et des éléments de navigation. Ils sont particulièrement utiles pour les projets
+                    nécessitant une mise en page cohérente et responsive sans avoir à écrire beaucoup de CSS
+                    personnalisé.
+                </p>
+                <h3>Outils de Développement</h3>
+                <p>Pour les développeurs, plusieurs outils facilitent le travail avec le CSS. L'inspecteur d'éléments
+                    intégré dans les navigateurs modernes permet d'examiner et de modifier le CSS en temps réel, ce qui
+                    est
+                    idéal pour le débogage et les ajustements visuels. Des éditeurs de code comme Visual Studio Code
+                    (VSCode) et Sublime Text offrent des extensions spécifiques au CSS qui améliorent la productivité,
+                    comme
+                    la coloration syntaxique, l'autocomplétion, et les snippets de code.</p>
+                <h3>Bonnes Pratiques</h3>
+                <p>Adopter de bonnes pratiques en CSS est crucial pour maintenir un code propre et efficace.
+                    L'organisation
+                    est essentielle : utiliser des conventions de nommage claires et structurer le CSS de manière
+                    logique
+                    aide à naviguer et à maintenir le code. Par exemple, suivre une méthodologie comme BEM (Block,
+                    Element,
+                    Modifier) peut rendre le CSS plus compréhensible et réutilisable.
+                    La performance est également un aspect important. Minimiser le CSS en supprimant les styles
+                    inutilisés
+                    et en utilisant des techniques comme le CSS-in-JS peut améliorer les temps de chargement et
+                    l'efficacité
+                    globale du site. De plus, il est crucial de considérer l'accessibilité en utilisant des styles qui
+                    améliorent l'expérience utilisateur pour tous, comme un bon contraste des couleurs et des tailles de
+                    police lisibles.</p>
+                <h3>Évolutions Récentes</h3>
+                <p>Le CSS continue d'évoluer avec de nouvelles fonctionnalités qui enrichissent les possibilités de
+                    design
+                    web. CSS Grid est un système de disposition moderne qui permet de créer des mises en page complexes
+                    de
+                    manière plus intuitive que les méthodes traditionnelles. Les variables CSS, introduites avec les
+                    custom
+                    properties, permettent de stocker des valeurs réutilisables directement dans le CSS, facilitant
+                    ainsi
+                    les mises à jour et la cohérence du design.</p>
+                <div class="img"><img src="../asset/image/css_3.webp" alt="css"></div>
+
+            </div>
+        </article>
+        <hr>
+        <article class="video">
+            <p>Voici une vidéo explicative pour apprendre les bases sur CSS</p>
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/iSWjmVcfQGg?si=c2EAsKjiYetIn_Xt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </article>
+    </main>
+    <footer>
+        <div class="contact">
+            <a href="./contact.html">Une question ?</a>
+        </div>
+        <div class="arrow">
+            <a href="#top" id="arrow"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

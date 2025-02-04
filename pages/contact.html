@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/style/contact.css">
+    <title>Formulaire de Contact</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Retour à l'accueil</a>
+    </header>
+    <div id=message class="hidden">Message bien recu
+    </div>
+    <div id="contact-form" class="cacher">
+
+        <h2>Formulaire de Contact</h2>
+        <form action="votre_script_de_traitement.php" method="post" id="myform">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="mess" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <div class="contact">
+        <h2>Nous contacter</h2>
+        <ul>
+            <li>Tel : 06 66 66 66 66</li>
+            <li>infodev@infodev.fr</li>
+        </ul>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
